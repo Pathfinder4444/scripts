@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+tail -n +2 $1 > ".$1"
+/usr/bin/markdown-reader ".$1"
+sleep 1
+rm ".{$1}"
